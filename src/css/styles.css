@@ -1,1 +1,25 @@
+* {
+  margin: 0;
+  /* border: 1px solid red; */
+}
 
+.page{
+  margin-top: 4vw;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 52%;
+  padding: 10px;
+  background-color: red;
+}
+
+input{
+  width: 49%;
+}
+
+select, button{
+  width: 24%;
+}
+
+.answer{
+  margin-top: 10px;
+}
