@@ -1,9 +1,8 @@
 //Testing
-function Input(age, planet, planetAge, lifeLeftOnPlanet){
+function Input(age, planet, planetAge){
   this.age = age;
   this.planet = planet;
   this.planetAge = planetAge;
-  this.lifeLeftOnPlanet = lifeLeftOnPlanet;
 }
 
 function lifeLeft(life){
@@ -65,13 +64,13 @@ function lifeLeftOnJupiter(life){
   return Math.round(timeLeftOnMercury);
 }
 
-Input.prototype.planetSelector = function() {
-  if(this.planet === "venus"){
-    this.planetAge = venusAge(this.age);
-    this.lifeLeftOnPlanet = lifeLeftOnVenus(this.age)
+function planetSelector(life) {
+  if(life.planet === "venus"){
+    life.planetAge = venusAge(life.age);
   }
-  return this.planetAge;
-  return this.lifeLeftOnPlanet;
+  return life.planetAge;
 }
 
-export { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter }
+
+
+export { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter, planetSelector }

@@ -1,4 +1,4 @@
-import { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter } from '../src/backEnd.js';
+import { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter, planetSelector } from '../src/backEnd.js';
 
 describe('age', function() {
   it('should take users age and not change it', function() {

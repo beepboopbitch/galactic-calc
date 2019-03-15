@@ -5,10 +5,13 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter, planetSelector } from './backEnd.js';
 
-$(function(){
-  $(".submit").click(function(){
-    const newInput = new Input(age, planet, planetAge, lifeLeftOnPlanet);
-    const planet = $(".planet").val("");
-    const age = $(".age").val();
-  });
-});
+// $(function(){
+//   $(".submit").click(function(){
+//     event.preventDefault();
+//     const newInput = new Input(age, planet);
+//     const planet = $(".planet").val();
+//     const age = $(".age").val();
+//     newInput.planetSelector();
+//     $(".output").html(planetAge);
+//   });
+// });
