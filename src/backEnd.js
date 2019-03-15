@@ -1,5 +1,5 @@
 //Testing
-function Input(age){
+function Input(age, planet, planetAge, lifeLeftOnPlanet){
   this.age = age;
   this.planet = planet;
   this.planetAge = planetAge;
@@ -67,8 +67,11 @@ function lifeLeftOnJupiter(life){
 
 Input.prototype.planetSelector = function() {
   if(this.planet === "venus"){
-    this
+    this.planetAge = venusAge(this.age);
+    this.lifeLeftOnPlanet = lifeLeftOnVenus(this.age)
   }
+  return this.planetAge;
+  return this.lifeLeftOnPlanet;
 }
 
 export { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter }

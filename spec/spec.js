@@ -94,3 +94,11 @@ describe('lifeLeftOnJupiter', function() {
     expect(years).toEqual(5);
   });
 });
+
+// describe('lifeLeft', function() {
+//   it('should show venus age', function() {
+//     const newInput = new Input(19, "venus");
+//     let lifeYears = planetSelector(newInput);
+//     expect(lifeYears).toEqual(60);
+//   });
+// });
