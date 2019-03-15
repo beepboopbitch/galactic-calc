@@ -17,4 +17,14 @@ function daysLeft(life){
   return daysRemaining;
 }
 
-export { Input, lifeLeft, dayAge, daysLeft }
+function mercuryAge(life){
+  const ageOnMercury = ((life.age * 365) / 88);
+  return Math.round(ageOnMercury);
+}
+
+function lifeLeftOnMercury(life){
+  const timeLeftOnMercury = (((79 - life.age) * 365) / 88);
+  return Math.round(timeLeftOnMercury);
+}
+
+export { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury }
