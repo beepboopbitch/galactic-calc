@@ -95,10 +95,10 @@ describe('lifeLeftOnJupiter', function() {
   });
 });
 
-// describe('lifeLeft', function() {
-//   it('should show venus age', function() {
-//     const newInput = new Input(19, "venus");
-//     let lifeYears = planetSelector(newInput);
-//     expect(lifeYears).toEqual(60);
-//   });
-// });
+describe('lifeLeft', function() {
+  it('should show venus age', function() {
+    const newInput = new Input(19, "venus");
+    let lifeYears = planetSelector(newInput);
+    expect(lifeYears).toEqual(60);
+  });
+});
