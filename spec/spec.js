@@ -1,4 +1,4 @@
-import { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter, planetSelector } from '../src/backEnd.js';
+import { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter, yourPlanetAge, timeLeftOnYourPlanet } from '../src/backEnd.js';
 
 describe('age', function() {
   it('should take users age and not change it', function() {
@@ -33,72 +33,64 @@ describe('daysLeft', function() {
 
 describe('mercuryAge', function() {
   it('should find age in years on mercury', function() {
-    const newInput = new Input(19);
-    let days = mercuryAge(newInput);
+    const newInput = new Input(19, "mercury");
+    let days = yourPlanetAge(newInput);
     expect(days).toEqual(79);
   });
 });
 
 describe('lifeLeftOnMercury', function() {
   it('should find years left on mercury', function() {
-    const newInput = new Input(19);
-    let years = lifeLeftOnMercury(newInput);
+    const newInput = new Input(19, "mercury");
+    let years = timeLeftOnYourPlanet(newInput);
     expect(years).toEqual(249);
   });
 });
 
 describe('venusAge', function() {
   it('should find age in years on venus', function() {
-    const newInput = new Input(19);
-    let days = venusAge(newInput);
+    const newInput = new Input(19, "venus");
+    let days = yourPlanetAge(newInput);
     expect(days).toEqual(31);
   });
 });
 
 describe('lifeLeftOnVenus', function() {
   it('should find years left on venus', function() {
-    const newInput = new Input(19);
-    let years = lifeLeftOnVenus(newInput);
+    const newInput = new Input(19, "venus");
+    let years = timeLeftOnYourPlanet(newInput);
     expect(years).toEqual(97);
   });
 });
 
 describe('marsAge', function() {
   it('should find age in years on mars', function() {
-    const newInput = new Input(19);
-    let days = marsAge(newInput);
+    const newInput = new Input(19, "mars");
+    let days = yourPlanetAge(newInput);
     expect(days).toEqual(10);
   });
 });
 
 describe('lifeLeftOnMars', function() {
   it('should find years left on mars', function() {
-    const newInput = new Input(19);
-    let years = lifeLeftOnMars(newInput);
+    const newInput = new Input(19, "mars");
+    let years = timeLeftOnYourPlanet(newInput);
     expect(years).toEqual(32);
   });
 });
 
 describe('jupiterAge', function() {
   it('should find age in years on jupiter', function() {
-    const newInput = new Input(19);
-    let days = jupiterAge(newInput);
+    const newInput = new Input(19, "jupiter");
+    let days = yourPlanetAge(newInput);
     expect(days).toEqual(2);
   });
 });
 
 describe('lifeLeftOnJupiter', function() {
   it('should find years left on jupiter', function() {
-    const newInput = new Input(19);
-    let years = lifeLeftOnJupiter(newInput);
+    const newInput = new Input(19, "jupiter");
+    let years = timeLeftOnYourPlanet(newInput);
     expect(years).toEqual(5);
-  });
-});
-
-describe('lifeLeft', function() {
-  it('should show venus age', function() {
-    const newInput = new Input(19, "venus");
-    let lifeYears = planetSelector(newInput);
-    expect(lifeYears).toEqual(60);
   });
 });

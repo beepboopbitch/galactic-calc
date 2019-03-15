@@ -1,10 +1,6 @@
-//Testing
-function Input(age, planet, planetAge){
-  this.age = age;
-  this.planet = planet;
-  this.planetAge = planetAge;
-}
 
+
+//Testing
 function lifeLeft(life){
   const remainingLife = (79 - life.age);
   return remainingLife;
@@ -20,57 +16,40 @@ function daysLeft(life){
   return daysRemaining;
 }
 
-//Mercury calculations
-function mercuryAge(life){
-  const ageOnMercury = ((life.age * 365) / 88);
-  return Math.round(ageOnMercury);
+//Final code
+function Input(age, planet, planetAge, timeLeftOnPlanet){
+  this.age = age;
+  this.planet = planet;
+  this.planetAge = planetAge;
+  this.timeLeftOnPlanet = timeLeftOnPlanet
 }
 
-function lifeLeftOnMercury(life){
-  const timeLeftOnMercury = (((79 - life.age) * 365) / 88);
-  return Math.round(timeLeftOnMercury);
-}
-
-//Venus calculations
-function venusAge(life){
-  const ageOnMercury = ((life.age * 365) / 225);
-  return Math.round(ageOnMercury);
-}
-
-function lifeLeftOnVenus(life){
-  const timeLeftOnMercury = (((79 - life.age) * 365) / 225);
-  return Math.round(timeLeftOnMercury);
-}
-
-//Mars calculations
-function marsAge(life){
-  const ageOnMercury = ((life.age * 365) / 687);
-  return Math.round(ageOnMercury);
-}
-
-function lifeLeftOnMars(life){
-  const timeLeftOnMercury = (((79 - life.age) * 365) / 687);
-  return Math.round(timeLeftOnMercury);
-}
-
-//Jupiter calculations
-function jupiterAge(life){
-  const ageOnMercury = ((life.age * 365) / 4300);
-  return Math.round(ageOnMercury);
-}
-
-function lifeLeftOnJupiter(life){
-  const timeLeftOnMercury = (((79 - life.age) * 365) / 4300);
-  return Math.round(timeLeftOnMercury);
-}
-
-function planetSelector(life) {
-  if(life.planet === "venus"){
-    life.planetAge = venusAge(life.age);
+function yourPlanetAge(life) {
+  if (life.planet === "venus"){
+    life.planetAge = Math.round((life.age * 365) / 225);
+  } else if (life.planet === "mars"){
+    life.planetAge = Math.round((life.age * 365) / 687);
+  } else if (life.planet === "mercury"){
+    life.planetAge = Math.round((life.age * 365) / 88);
+  } else if (life.planet === "jupiter"){
+    life.planetAge = Math.round((life.age * 365) / 4300);
   }
   return life.planetAge;
 }
 
+function timeLeftOnYourPlanet(life) {
+  if (life.planet === "venus"){
+    life.timeLeftOnPlanet = Math.round(((79 - life.age) * 365) / 225);
+  } else if (life.planet === "mars"){
+    life.timeLeftOnPlanet = Math.round(((79 - life.age) * 365) / 687);
+  } else if (life.planet === "mercury"){
+    life.timeLeftOnPlanet = Math.round(((79 - life.age) * 365) / 88);
+  } else if (life.planet === "jupiter"){
+    life.timeLeftOnPlanet = Math.round(((79 - life.age) * 365) / 4300);
+  }
+  return life.timeLeftOnPlanet;
+}
 
 
-export { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter, planetSelector }
+
+export { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter, yourPlanetAge, timeLeftOnYourPlanet }
