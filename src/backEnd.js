@@ -7,4 +7,14 @@ function lifeLeft(life){
   return remainingLife;
 }
 
-export { Input, lifeLeft }
+function dayAge(life){
+  const daysInLife = (life.age * 365);
+  return daysInLife;
+}
+
+function daysLeft(life){
+  const daysRemaining = ((79 - life.age) * 365);
+  return daysRemaining;
+}
+
+export { Input, lifeLeft, dayAge, daysLeft }
