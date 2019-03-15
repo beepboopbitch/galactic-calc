@@ -1,3 +1,4 @@
+//Testing
 function Input(age){
   this.age = age;
 }
@@ -17,6 +18,7 @@ function daysLeft(life){
   return daysRemaining;
 }
 
+//Mercury calculations
 function mercuryAge(life){
   const ageOnMercury = ((life.age * 365) / 88);
   return Math.round(ageOnMercury);
@@ -27,4 +29,37 @@ function lifeLeftOnMercury(life){
   return Math.round(timeLeftOnMercury);
 }
 
-export { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury }
+//Venus calculations
+function venusAge(life){
+  const ageOnMercury = ((life.age * 365) / 225);
+  return Math.round(ageOnMercury);
+}
+
+function lifeLeftOnVenus(life){
+  const timeLeftOnMercury = (((79 - life.age) * 365) / 225);
+  return Math.round(timeLeftOnMercury);
+}
+
+//Mars calculations
+function marsAge(life){
+  const ageOnMercury = ((life.age * 365) / 687);
+  return Math.round(ageOnMercury);
+}
+
+function lifeLeftOnMars(life){
+  const timeLeftOnMercury = (((79 - life.age) * 365) / 687);
+  return Math.round(timeLeftOnMercury);
+}
+
+//Jupiter calculations
+function jupiterAge(life){
+  const ageOnMercury = ((life.age * 365) / 4300);
+  return Math.round(ageOnMercury);
+}
+
+function lifeLeftOnJupiter(life){
+  const timeLeftOnMercury = (((79 - life.age) * 365) / 4300);
+  return Math.round(timeLeftOnMercury);
+}
+
+export { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter }
