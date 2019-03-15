@@ -50,6 +50,4 @@ function timeLeftOnYourPlanet(life) {
   return life.timeLeftOnPlanet;
 }
 
-
-
-export { Input, lifeLeft, dayAge, daysLeft, mercuryAge, lifeLeftOnMercury, venusAge, lifeLeftOnVenus, marsAge, lifeLeftOnMars, jupiterAge, lifeLeftOnJupiter, yourPlanetAge, timeLeftOnYourPlanet }
+export { Input, lifeLeft, dayAge, daysLeft, yourPlanetAge, timeLeftOnYourPlanet }
