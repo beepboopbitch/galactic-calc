@@ -8,10 +8,11 @@ import { Input, lifeLeft, dayAge, daysLeft, yourPlanetAge, timeLeftOnYourPlanet 
 $(function(){
   $(".submit").click(function(){
     event.preventDefault();
-    let planet = $(".planet").val();
-    let age = $(".age").val();
-    let newInput = new Input(age, planet);
+    const planet = $(".planet").val();
+    const age = $(".age").val();
+    const newInput = new Input(age, planet);
     let yourPlanet = yourPlanetAge(newInput);
-    $("span#output").text("Your are " + yourPlanet + " on " + planet);
+    let yourTime = timeLeftOnYourPlanet(newInput);
+    $("span#output").text("Your are " + yourPlanet + " on " + planet + ", and have about " + yourTime + " years of expected life left.");
   });
 });
