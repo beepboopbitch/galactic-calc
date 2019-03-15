@@ -2,4 +2,9 @@ function Input(age){
   this.age = age;
 }
 
-export { Input }
+function lifeLeft(life){
+  const remainingLife = (79 - life.age);
+  return remainingLife;
+}
+
+export { Input, lifeLeft }

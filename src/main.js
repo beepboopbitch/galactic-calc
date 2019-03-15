@@ -3,4 +3,4 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Input, yearCalc, monthCalc, daysCalc } from './backEnd.js';
+import { Input, lifeLeft } from './backEnd.js';
