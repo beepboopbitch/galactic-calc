@@ -19,7 +19,7 @@ Return planet age and life left on planet to user | mercuryAge: 79 lifeLeftOnMer
 ## Setup
 
 * _Clone this repository_
-https://github.com/nayomi-morita/start-up.git
+https://github.com/nayomi-morita/galactic-calc.git
 * _Use chosen code editor to make changes (I used atom)._
 * _Install node/homebrew on device_
 * _Run "npm install" in terminal in start-up project_
