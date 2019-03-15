@@ -10,9 +10,9 @@ $(function(){
     event.preventDefault();
     const planet = $(".planet").val();
     const age = $(".age").val();
-    const newInput = new Input(age, planet);
-    let yourPlanet = yourPlanetAge(newInput);
-    let yourTime = timeLeftOnYourPlanet(newInput);
+    const newerInput = new Input(age, planet);
+    let yourPlanet = yourPlanetAge(newerInput);
+    let yourTime = timeLeftOnYourPlanet(newerInput);
     $("span#output").text("Your are " + yourPlanet + " on " + planet + ", and have about " + yourTime + " years of expected life left.");
   });
 });
