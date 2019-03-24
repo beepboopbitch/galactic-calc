@@ -33,7 +33,7 @@ describe('daysLeft', function() {
 
 describe('mercuryAge', function() {
   it('should find age in years on mercury', function() {
-    const newInput = new Input(19, "mercury");
+    const newInput = new Input(19, "Mercury");
     let days = yourPlanetAge(newInput);
     expect(days).toEqual(79);
   });
@@ -41,7 +41,7 @@ describe('mercuryAge', function() {
 
 describe('lifeLeftOnMercury', function() {
   it('should find years left on mercury', function() {
-    const newInput = new Input(19, "mercury");
+    const newInput = new Input(19, "Mercury");
     let years = timeLeftOnYourPlanet(newInput);
     expect(years).toEqual(249);
   });
@@ -49,7 +49,7 @@ describe('lifeLeftOnMercury', function() {
 
 describe('venusAge', function() {
   it('should find age in years on venus', function() {
-    const newInput = new Input(19, "venus");
+    const newInput = new Input(19, "Venus");
     let days = yourPlanetAge(newInput);
     expect(days).toEqual(31);
   });
@@ -57,7 +57,7 @@ describe('venusAge', function() {
 
 describe('lifeLeftOnVenus', function() {
   it('should find years left on venus', function() {
-    const newInput = new Input(19, "venus");
+    const newInput = new Input(19, "Venus");
     let years = timeLeftOnYourPlanet(newInput);
     expect(years).toEqual(97);
   });
@@ -65,7 +65,7 @@ describe('lifeLeftOnVenus', function() {
 
 describe('marsAge', function() {
   it('should find age in years on mars', function() {
-    const newInput = new Input(19, "mars");
+    const newInput = new Input(19, "Mars");
     let days = yourPlanetAge(newInput);
     expect(days).toEqual(10);
   });
@@ -73,7 +73,7 @@ describe('marsAge', function() {
 
 describe('lifeLeftOnMars', function() {
   it('should find years left on mars', function() {
-    const newInput = new Input(19, "mars");
+    const newInput = new Input(19, "Mars");
     let years = timeLeftOnYourPlanet(newInput);
     expect(years).toEqual(32);
   });
@@ -81,7 +81,7 @@ describe('lifeLeftOnMars', function() {
 
 describe('jupiterAge', function() {
   it('should find age in years on jupiter', function() {
-    const newInput = new Input(19, "jupiter");
+    const newInput = new Input(19, "Jupiter");
     let days = yourPlanetAge(newInput);
     expect(days).toEqual(2);
   });
@@ -89,7 +89,7 @@ describe('jupiterAge', function() {
 
 describe('lifeLeftOnJupiter', function() {
   it('should find years left on jupiter', function() {
-    const newInput = new Input(19, "jupiter");
+    const newInput = new Input(19, "Jupiter");
     let years = timeLeftOnYourPlanet(newInput);
     expect(years).toEqual(5);
   });
